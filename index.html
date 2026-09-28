@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Life Hub</title>
+
+    <style>
+        html {
+    scroll-behavior: smooth;
+}        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        /* Navigation */
+        nav {   
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 8%;
+            background: #e8f0ff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        /* Cards */
+        .section {
+            padding: 50px 8%;
+        }
+
+        .section h2 {
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+<nav>
+    <h2>🎓 Student Life Hub</h2>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#events">Events</a>
+        <a href="#study">Study</a>
+        <a href="#career">Career</a>
+        <a href="#announcements">Announcements</a>
+    </div>
+</nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>Everything a student needs, in one place.</h1>
+
+        <p>
+            Manage your studies, tasks, events and career journey
+            from one simple platform.
+        </p>
+
+        <a href="#features" class="button">
+            Explore Hub
+        </a>
+
+    </section>
+    <!-- Dashboard Stats -->
+<section class="section">
+    <h2>📊 Student Dashboard</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📚 3</h3>
+            <p>Study Areas</p>
+        </div>
+
+        <div class="card">
+            <h3>📅 3</h3>
+            <p>Upcoming Events</p>
+        </div>
+
+        <div class="card">
+            <h3>💼 3</h3>
+            <p>Career Resources</p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 AI</h3>
+            <p>Study Assistant</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Features -->
+    <section class="section" id="features">
+
+        <h2>Explore Student Life Hub</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📅 Events</h3>
+                <p>
+                    Discover workshops, college events and important
+                    upcoming activities.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📚 Study Hub</h3>
+                <p>
+                    Keep your notes, learning resources and study
+                    materials organised.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>✅ My Tasks</h3>
+                <p>
+                    Keep track of assignments, projects and personal
+                    study tasks.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💼 Career</h3>
+                <p>
+                    Explore internships, skills and opportunities
+                    to prepare for your career.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📢 Announcements</h3>
+                <p>
+                    Stay updated with important college announcements
+                    and notifications.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 AI Study Assistant</h3>
+                <p>
+                    Get personalised study guidance and simple
+                    explanations with AI.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    </section>
+
+<!-- Upcoming Events -->
+<section class="section" id="events">
+    <h2>📅 Upcoming Events</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>💻 Coding Workshop</h3>
+            <p>Learn the basics of coding and build your first project.</p>
+            <p><strong>📅 October 5, 2026</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 AI & Technology Talk</h3>
+            <p>Explore how AI is changing the world of technology.</p>
+            <p><strong>📅 October 12, 2026</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Career Guidance</h3>
+            <p>Get useful tips about internships, skills and careers.</p>
+            <p><strong>📅 October 20, 2026</strong></p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Announcements -->
+<section class="section" id="announcements">
+    <h2>📢 Announcements</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📚 Exam Update</h3>
+            <p>Internal assessment schedules and important exam information will be updated here.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎓 College Activities</h3>
+            <p>Stay updated about workshops, competitions, clubs and student activities.</p>
+        </div>
+
+        <div class="card">
+            <h3>📌 Important Notice</h3>
+            <p>Check this section regularly for important student announcements and updates.</p>
+        </div>
+    </div>
+</section>
+<!-- Study Hub -->
+<section class="section" id="study">
+    <h2>📚 Study Hub</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💻 Programming</h3>
+            <p>Learn C, Java, Python and other programming basics.</p>
+            <a href="#programming" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <h3>🗄️ DBMS</h3>
+            <p>Learn SQL, databases, normalization and important concepts.</p>
+            <a href="#dbms" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <h3>📐 Mathematics</h3>
+            <p>Find useful resources for engineering mathematics and problem solving.</p>
+            <a href="#mathematics" class="button">Explore</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- Career Hub -->
+<section class="section" id="career">
+
+    <h2>💼 Career Hub</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎯 Skills</h3>
+            <p>
+                Learn programming, communication, problem-solving
+                and other skills needed for your career.
+            </p>
+            <a href="#skills" class="button">View Skills</a>
+        </div>
+
+        <div class="card">
+            <h3>💻 Internships</h3>
+            <p>
+                Discover internship opportunities and start
+                building real-world experience.
+            </p>
+            <a href="#internships" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <h3>📄 Resume</h3>
+            <p>
+                Learn how to create a simple and professional
+                resume for your first opportunity.
+            </p>
+            <a href="#resume" class="button">Build Resume</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- AI Study Assistant -->
+<section class="section">
+
+    <h2>🤖 AI Study Assistant</h2>
+
+    <div class="card">
+
+        <p>
+            Ask a study question and get a quick learning suggestion.
+        </p>
+
+        <br>
+
+        <input
+            type="text"
+            id="questionInput"
+            placeholder="Example: How should I prepare for DBMS?"
+            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;"
+        >
+
+        <br><br>
+
+        <button onclick="askAI()" class="button">
+            Ask AI
+        </button>
+
+        <p id="aiAnswer" style="margin-top: 20px;"></p>
+
+    </div>
+
+</section>
+<!-- My Tasks -->
+<section class="section">
+
+    <h2>✅ My Tasks</h2>
+
+    <div class="card">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a task..."
+        >
+
+        <button onclick="addTask()" class="button">
+            Add Task
+        </button>
+
+        <ul id="taskList"></ul>
+        <p id="taskCount" style="margin-top: 15px; font-weight: bold;">
+    📋 0 Tasks
+</p>
+
+    </div>
+
+</section>
+<!-- DBMS Resources -->
+<section class="section" id="dbms">
+    <h2>🗄️ DBMS Resources</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📊 SQL</h3>
+            <p>Learn SQL queries, SELECT, INSERT, UPDATE, DELETE and important database commands.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔗 Database Concepts</h3>
+            <p>Understand tables, keys, relationships, constraints and database design.</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Normalization</h3>
+            <p>Learn 1NF, 2NF, 3NF and how normalization helps reduce data redundancy.</p>
+        </div>
+    </div>
+</section>
+<!-- Mathematics Resources -->
+<section class="section" id="mathematics">
+    <h2>📐 Mathematics Resources</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🧮 Engineering Mathematics</h3>
+            <p>Learn important concepts, formulas and problem-solving methods.</p>
+        </div>
+
+        <div class="card">
+            <h3>📈 Statistics</h3>
+            <p>Understand basic statistical concepts and solve common problems.</p>
+        </div>
+
+        <div class="card">
+            <h3>📝 Practice</h3>
+            <p>Practice important questions and revise concepts before exams.</p>
+        </div>
+    </div>
+</section>
+<!-- Skills -->
+<section class="section" id="skills">
+    <h2>🎯 Skills</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>💻 Technical Skills</h3>
+            <p>Build your knowledge in programming, databases, web development and technology.</p>
+        </div>
+
+        <div class="card">
+            <h3>🗣️ Communication</h3>
+            <p>Improve communication, presentation and teamwork skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Problem Solving</h3>
+            <p>Practice logical thinking and problem-solving through projects and challenges.</p>
+        </div>
+    </div>
+</section>
+<!-- Internships -->
+<section class="section" id="internships">
+    <h2>💻 Internship Hub</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🔍 Find Opportunities</h3>
+            <p>Explore internships that match your interests and skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛠️ Build Experience</h3>
+            <p>Work on real-world projects and gain practical experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>📄 Prepare</h3>
+            <p>Improve your resume, communication and interview skills before applying.</p>
+        </div>
+    </div>
+</section>
+<!-- Resume -->
+<section class="section" id="resume">
+    <h2>📄 Resume Builder</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📝 Create Your Resume</h3>
+            <p>Learn how to create a simple and professional resume for internships and job opportunities.</p>
+        </div>
+
+        <div class="card">
+            <h3>💡 Resume Tips</h3>
+            <p>Highlight your skills, projects, education and achievements clearly.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Get Ready</h3>
+            <p>Keep your resume updated and prepare it before applying for opportunities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+
+
+    <!-- Footer -->
+     <!-- Programming Resources -->
+<section class="section" id="programming">
+    <h2>💻 Programming Resources</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🐍 Python</h3>
+            <p>Learn Python basics, variables, loops, functions and simple programs.</p>
+        </div>
+
+        <div class="card">
+            <h3>☕ Java</h3>
+            <p>Learn Java basics, classes, objects, inheritance and programming concepts.</p>
+        </div>
+
+        <div class="card">
+            <h3>©️ C Programming</h3>
+            <p>Practice C programming, arrays, functions, pointers and data structures.</p>
+        </div>
+    </div>
+</section>
+    <footer>
+        <p>© 2026 Student Life Hub | Built with AI</p>
+    </footer>
+<footer>
+    ...
+</footer>
+
+<script>
+
+function addTask() {
+
+    let input = document.getElementById("taskInput");
+    
+    let task = input.value.trim();
+
+    if (task === "") {
+        alert("Please enter a task!");
+        return;
+    }
+    
+    let li = document.createElement("li");
+let taskText = document.createElement("span");
+taskText.textContent = task;
+let completeButton = document.createElement("button");
+completeButton.textContent = "✅ Complete";
+completeButton.style.marginLeft = "10px";
+completeButton.style.padding = "6px 10px";
+completeButton.style.border = "none";
+completeButton.style.borderRadius = "6px";
+completeButton.style.background = "#22c55e";
+completeButton.style.color = "white";
+completeButton.style.cursor = "pointer";
+completeButton.onclick = function() {
+    taskText.style.textDecoration = "line-through";
+};
+let deleteButton = document.createElement("button");
+deleteButton.textContent = "❌ Delete";
+deleteButton.style.marginLeft = "10px";
+deleteButton.style.padding = "6px 10px";
+deleteButton.style.border = "none";
+deleteButton.style.borderRadius = "6px";
+deleteButton.style.background = "#ef4444";
+deleteButton.style.color = "white";
+deleteButton.style.cursor = "pointer";
+
+deleteButton.onclick = function() {
+    li.remove();
+};
+
+li.appendChild(taskText);
+li.appendChild(completeButton);
+li.appendChild(deleteButton);
+    
+
+    li.style.marginTop = "10px";
+    li.style.padding = "10px";
+    li.style.background = "#f3f4f6";
+    li.style.borderRadius = "8px";
+
+    document.getElementById("taskList").appendChild(li);
+    localStorage.setItem("tasks", document.getElementById("taskList").innerHTML);
+    document.getElementById("taskCount").textContent =
+    "📋 " + document.getElementById("taskList").children.length + " Tasks";
+
+    input.value = "";
+}
+window.onload = function() {
+    let savedTasks = localStorage.getItem("tasks");
+
+    if (savedTasks) {
+        document.getElementById("taskList").innerHTML = savedTasks;
+
+        document.getElementById("taskCount").textContent =
+            "📋 " + document.getElementById("taskList").children.length + " Tasks";
+    }
+};
+function askAI() {
+
+    let question = document.getElementById("questionInput").value.trim();
+    let answer = document.getElementById("aiAnswer");
+
+    if (question === "") {
+        answer.textContent = "Please enter a question first.";
+        return;
+    }
+
+    answer.textContent =
+        "📚 Study Suggestion: Start by understanding the basic concepts, " +
+        "make short notes, practice important questions, and revise what " +
+        "you learned before moving to the next topic.";
+}
+</script>
+
+</body>
+</html>
